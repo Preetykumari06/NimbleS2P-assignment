@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/db');
 
-const Invoice = sequelize.define('invoice', {
+const Invoice = sequelize.define('Invoice', {
     alternatePayee1: {
         type: DataTypes.STRING,
     },
