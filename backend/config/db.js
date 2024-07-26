@@ -2,15 +2,6 @@ const mongoose = require('mongoose');
 const { Sequelize } = require('sequelize');
 require('dotenv').config()
 
-// MongoDB configuration
-const mongoURI = process.env.mongodb_uri;
-mongoose.connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.log(err));
-
 // MySQL configuration with Sequelize
 const sequelize = new Sequelize(process.env.mySQL_uri, {
     host: process.env.host,
