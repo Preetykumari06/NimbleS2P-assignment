@@ -1,42 +1,143 @@
-#root {
-  max-width: 1280px;
+/* Ensure the body takes up the full viewport */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Container for the entire application */
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  width:1250px;
+  height: 100vh;
+  /* border: 2px solid red; */
+  background-color: white; /* Set the background color to white */
+  color: black; /* Ensure the text color is black */
+}
+
+/* Styles for the PDF viewer section */
+.pdf-viewer {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  overflow: auto;
+  background-color: white; /* Ensure the PDF viewer section has a white background */
+  color: black; /* Ensure the text color is black */
+}
+
+/* Styles for the form container */
+.invoice-form {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 500;
+  gap: 20px; /* Add some space between the forms */
+  background-color: white; /* Ensure the form container has a white background */
+  color: black; /* Ensure the text color is black */
+}
+
+/* Styles for the forms */
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white; /* Set the background color to white */
+  color: black; /* Set the text color to black */
+}
+
+/* Styles for the form labels and inputs */
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form label input {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white; /* Set the input background color to white */
+  color: black; /* Set the input text color to black */
+}
+
+/* General styling for form groups */
+.form-group {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  justify-content: space-between;
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Styling for form labels */
+label {
+  flex: 1; 
+  margin-right: 10px; /* Space between label and input */
+  text-align: right; /* Align text to the right */
+  min-width: 80px; 
+}
+
+/* Styling for form inputs */
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white; /* Set the input background color to white */
+  color: black; /* Set the input text color to black */
+  width: 50%; /* Ensure inputs take up the full width of the container */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Styling for radio button group */
+.radio-group {
+  display: flex;
+  gap: 10px; /* Space between radio buttons */
+}
+
+.line-item-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.line-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+label {
+  flex: 0 0 200px;
+  margin-right: 10px;
+  text-align: right;
 }
 
-.card {
-  padding: 2em;
+input[type="text"], select {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
 }
 
-.read-the-docs {
-  color: #888;
-}
+
+
