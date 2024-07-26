@@ -21,7 +21,7 @@ npm install
 3. Run the Development Server:
 npm run dev
 
-This will start the React development server and the frontend will be available at `http://localhost:5173/`.
+This will start the React development server and the frontend will be available at http://localhost:5173/.
 
 Backend Setup :
 1. Install Dependencies:
@@ -37,7 +37,7 @@ mySQL_uri = your_sql_connection_url
 3. Run the Backend Server:
 npm run start
 
-This will start the Node.js server and the backend will be available at `http://localhost:5050`.
+This will start the Node.js server and the backend will be available at http://localhost:5050.
 
 Running the Application in local:
 1. Start the Backend:
@@ -47,9 +47,9 @@ Ensure the backend server is running by following the Backend Setup instructions
 Ensure the frontend server is running by following the Frontend Setup instructions.
 
 3. Access the Application:
-Open your web browser and navigate to `http://localhost:5173` to view the React application. The frontend will interact with the backend API running at `http://localhost:5050`.
+Open your web browser and navigate to http://localhost:5173 to view the React application. The frontend will interact with the backend API running at http://localhost:5050.
 
 Live Demo :
-The application is deployed and can be accessed live at the following URL: `https://nimble-s2-p-assignment-cmdw.vercel.app/`.
+The application is deployed and can be accessed live at the following URL: https://nimble-s2-p-assignment-cmdw.vercel.app/.
 
 Feel free to check out the live demo to see the app in action!
